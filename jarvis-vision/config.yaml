@@ -1,0 +1,20 @@
+capture:
+  monitor: 1
+  max_fps: 60
+
+detector:
+  model: "yolov8n.pt"
+  confidence: 0.35
+  classes: [0]
+  device: "cpu"
+
+display:
+  window_name: "JARVIS Vision - CV Demonstration"
+  width: 1280
+  height: 720
+  show_boxes: true
+  show_crosshair: true
+  show_metrics: true
+
+target:
+  strategy: "nearest_to_crosshair"
